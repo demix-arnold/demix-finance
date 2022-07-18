@@ -140,9 +140,9 @@ h4 {
   justify-content: space-between;
 }
 .chart-detail {
-  border-width: 0 1px 1px 1px;
+  /* border-width: 0 1px 1px 1px;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
   width: 600px;
   height: 300px;
   overflow: scroll;
@@ -152,18 +152,19 @@ h4 {
 }
 
 .chart-detail > canvas {
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 .chart-detail > div > canvas {
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .chart-set {
-  border-width: 1px 1px 0 1px;
+  /* border-width: 1px 1px 0 1px;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
+  margin-left: 55px;
   position: relative;
-  width: 600px;
+  width: 545px;
 }
 
 .chart-detail::-webkit-scrollbar {
@@ -172,13 +173,13 @@ h4 {
 
 .chart-detail-set {
   position: absolute;
-  top: 5px;
+  top: 0px;
   right: 0;
 }
 
 .chart-detail-set-list {
   position: absolute;
-  top: 20px;
+  top: -60px;
   right: 0;
   background-color: rgba(228, 215, 215, 0.401);
 }
@@ -190,6 +191,17 @@ h4 {
 .mt5 {
   margin-top: 5px;
 }
+/* 
+.aaaa {
+  position: relative;
+}
+
+.aaaa > canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+} */
 
 /* 시작 */
 
@@ -530,4 +542,126 @@ footer .inner .copyright {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* 애니메이션 */
+
+.fade-in-box {
+  display: inline-block;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s; /* Firefox */
+  -webkit-animation: fadein 3s; /* Safari and Chrome */
+  -o-animation: fadein 3s; /* Opera */
+}
+.fade-in-img {
+  display: inline-block;
+  animation: fadein1 5s;
+  -moz-animation: fadein1 5s; /* Firefox */
+  -webkit-animation: fadein1 5s; /* Safari and Chrome */
+  -o-animation: fadein1 5s; /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein1 {
+  /* Firefox */
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein1 {
+  /* Safari and Chrome */
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein1 {
+  /* Opera */
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+.p-ab {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.rela {
+  position: relative;
+}
+.bg-White {
+  background-color: white;
+}
+
+.pd-TB {
+  padding: 50px 0;
+}
+
+.marginT {
+  margin-top: 50px;
 }

@@ -10,7 +10,7 @@
         <div class="strategyItem">
           <img
             class="icon"
-            src="../assets/monitoring_FILL0_wght400_GRAD0_opsz20.svg"
+            src="../assets/monitoring_FILL0_wght100_GRAD-25_opsz20.svg"
             alt=""
           />
           <!-- <div class="icon material-symbols-outlined">monitoring</div> -->
@@ -27,12 +27,14 @@
         <div class="strategyItem">
           <img
             class="icon"
-            src="../assets/monitoring_FILL0_wght400_GRAD0_opsz20.svg"
+            src="../assets/monitoring_FILL0_wght100_GRAD-25_opsz20.svg"
             alt=""
           />
           <!-- <div class="icon material-symbols-outlined">monitoring</div> -->
           <div class="text">
-            <div class="strategyTitle">투자전략2 (Spot, LEVERAGE: ⅹ3)</div>
+            <div class="strategyTitle smallTitle">
+              투자전략2 (Spot, LEVERAGE: ⅹ3)
+            </div>
             <div class="strategydescription">
               특징: 변동성이 큰 시장 환경 최적화<br />목표: 디믹스 마이닝 수익
               극대화 (x3)
@@ -42,12 +44,12 @@
         <div class="strategyItem">
           <img
             class="icon"
-            src="../assets/currency_bitcoin_FILL0_wght100_GRAD0_opsz20.svg"
+            src="../assets/currency_bitcoin_FILL1_wght100_GRAD-25_opsz20.svg"
             alt=""
           />
           <!-- <div class="icon material-symbols-outlined">currency_bitcoin</div> -->
           <div class="text">
-            <div class="strategyTitle">
+            <div class="strategyTitle smallTitle">
               투자전략3 (Future, LEVERAGE: ⅹ5 이상)
             </div>
             <div class="strategydescription">
@@ -60,12 +62,12 @@
         <div class="strategyItem">
           <img
             class="icon"
-            src="../assets/account_tree_FILL1_wght100_GRAD0_opsz20.svg"
+            src="../assets/account_tree_FILL1_wght100_GRAD-25_opsz20.svg"
             alt=""
           />
           <!-- <div class="icon material-symbols-outlined">account_tree</div> -->
           <div class="text">
-            <div class="strategyTitle">
+            <div class="strategyTitle smallTitle">
               투자전략4 (Delivery, LEVERAGE: ⅹ5 이상)
             </div>
             <div class="strategydescription">

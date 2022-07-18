@@ -17,8 +17,9 @@
               목표: 코인 가격 10배 이상 도달 시 수익 실현 예정
             </div>
           </div>
-          <div>
+          <div class="rela">
             <slot name="chart1"></slot>
+            <slot name="chart11"></slot>
           </div>
         </li>
         <li class="project project2">
@@ -35,8 +36,9 @@
               목표: 초기 코인 가격 2~3배 도달 시 수익 실현
             </div>
           </div>
-          <div>
+          <div class="rela">
             <slot name="chart2"></slot>
+            <slot name="chart22"></slot>
           </div>
         </li>
         <li class="project project3">
@@ -56,8 +58,9 @@
               USDT/BUSD 수량 증대
             </div>
           </div>
-          <div>
+          <div class="rela">
             <slot name="chart3"></slot>
+            <slot name="chart33"></slot>
           </div>
         </li>
         <li class="project project4">
@@ -77,10 +80,33 @@
               전환
             </div>
           </div>
-          <div>
+          <div class="rela">
             <slot name="chart4"></slot>
+            <slot name="chart44"></slot>
           </div>
         </li>
+        <!-- <li class="project project5">
+          <div class="text">
+            <span class="badge highLiquidity">High Liquidity </span>
+            <div class="strategyTitle smallTitle">
+              투자 전략 5 (Delivery, x5~x10)
+            </div>
+            <div class="projectName">BTC/USD (x10)</div>
+            <div class="projectInfo">
+              대상: 풍부한 유동성을 가지고 장기 우상향 마켓에 적합<br />
+              규모: $200,000 이상의 대규모 자산<br />특징: 회복 및 상승장에서
+              코인 수량을 점진적으로 증가 높은 리스크의 선물 시장에서 디믹스
+              알고리즘을 통해 리스크 최소화
+              <br />
+              목표: 초기 코인 가격 2~3배 도달 시 수식 실현하거나 투자 전략 1로
+              전환
+            </div>
+          </div>
+          <div class="rela">
+            <slot name="chart5"></slot>
+            <slot name="chart55"></slot>
+          </div>
+        </li> -->
       </ul>
     </div>
   </section>

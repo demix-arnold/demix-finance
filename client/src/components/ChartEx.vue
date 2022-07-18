@@ -15,7 +15,7 @@
         </li>
         <li class="chartDetail">
           <img src="../assets/chart-sample.png" alt="" />
-          <div class="type">옵션</div>
+          <div class="type smallTitle">옵션</div>
           <div class="description">
             홀드: 단순 홀드 시 자산 변동 율 <br />
             실 수익: 초기 예치 금액 대비 현재 수익 율 <br />
