@@ -8,12 +8,8 @@
       </div>
       <div class="strategyList">
         <div class="strategyItem">
-          <img
-            class="icon"
-            src="../assets/monitoring_FILL0_wght100_GRAD-25_opsz20.svg"
-            alt=""
-          />
-          <!-- <div class="icon material-symbols-outlined">monitoring</div> -->
+          <span class="icon material-symbols-outlined">currency_bitcoin</span>
+
           <div class="text">
             <div class="strategyTitle smallTitle">
               투자전략1 (Spot, LEVERAGE: ⅹ1)
@@ -25,12 +21,7 @@
           </div>
         </div>
         <div class="strategyItem">
-          <img
-            class="icon"
-            src="../assets/monitoring_FILL0_wght100_GRAD-25_opsz20.svg"
-            alt=""
-          />
-          <!-- <div class="icon material-symbols-outlined">monitoring</div> -->
+          <span class="icon material-symbols-outlined">leaderboard</span>
           <div class="text">
             <div class="strategyTitle smallTitle">
               투자전략2 (Spot, LEVERAGE: ⅹ3)
@@ -42,12 +33,7 @@
           </div>
         </div>
         <div class="strategyItem">
-          <img
-            class="icon"
-            src="../assets/currency_bitcoin_FILL1_wght100_GRAD-25_opsz20.svg"
-            alt=""
-          />
-          <!-- <div class="icon material-symbols-outlined">currency_bitcoin</div> -->
+          <span class="icon material-symbols-outlined">currency_exchange</span>
           <div class="text">
             <div class="strategyTitle smallTitle">
               투자전략3 (Future, LEVERAGE: ⅹ5 이상)
@@ -60,12 +46,7 @@
           </div>
         </div>
         <div class="strategyItem">
-          <img
-            class="icon"
-            src="../assets/account_tree_FILL1_wght100_GRAD-25_opsz20.svg"
-            alt=""
-          />
-          <!-- <div class="icon material-symbols-outlined">account_tree</div> -->
+          <span class="icon material-symbols-outlined">trending_up</span>
           <div class="text">
             <div class="strategyTitle smallTitle">
               투자전략4 (Delivery, LEVERAGE: ⅹ5 이상)
