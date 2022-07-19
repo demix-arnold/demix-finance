@@ -106,11 +106,7 @@
 
     <a class="menu" href="#menu-strategy">
       <div id="to-top">
-        <img
-          class="icon"
-          src="../assets/arrow_upward_FILL0_wght400_GRAD0_opsz20.svg"
-          alt=""
-        />
+        <div class="material-symbols-outlined">arrow_upward</div>
         <!-- <div class="material-symbols-outlined">arrow_upward</div> -->
       </div>
     </a>
@@ -333,7 +329,7 @@ export default {
   },
   methods: {
     async chartDataCall(sheetNum) {
-      const list = await this.api("/api/db", "post", {
+      const list = await this.api("/api/db0", "post", {
         param: [sheetNum],
       });
       console.log("리스트 업데이트");

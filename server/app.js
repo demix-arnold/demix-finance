@@ -29,7 +29,7 @@ const server = app.listen(3000, () => {
   log.info("Server started. port 3000");
 });
 
-app.post("/api/db", async (req, res) => {
+app.post("/api/db0", async (req, res) => {
   let sheetNum = req.body.param[0];
   console.log(sheetNum);
   log.info(`/api/db, param: ${sheetNum}`);
