@@ -17,8 +17,10 @@ const log = require("../config/logger");
 async function authGoogleSheet() {
   try {
     // await doc.useServiceAccountAuth(gs_creds);
+    // console.log(process.env);
     await doc.useServiceAccountAuth(process.env);
     await doc.loadInfo();
+
     log.info("google connect");
   } catch (err) {
     console.log("AUTH ERROR ", err);
@@ -50,6 +52,7 @@ async function authGoogleSheet1() {
     // await doc.useServiceAccountAuth(gs_creds);
     await doc1.useServiceAccountAuth(process.env);
     await doc1.loadInfo();
+
     log.info("google connect");
   } catch (err) {
     console.log("AUTH ERROR ", err);
