@@ -143,7 +143,7 @@ h4 {
   /* border-width: 0 1px 1px 1px;
   border-style: solid;
   border-color: black; */
-  width: 600px;
+  width: 700px;
   height: 300px;
   overflow: scroll;
   /* -ms-overflow-style: none; */
@@ -162,9 +162,9 @@ h4 {
   /* border-width: 1px 1px 0 1px;
   border-style: solid;
   border-color: black; */
-  margin-left: 55px;
+  /* margin-left: 55px; */
   position: relative;
-  width: 545px;
+  width: 700px;
 }
 
 .chart-detail::-webkit-scrollbar {
@@ -408,7 +408,6 @@ header .inner .menus .menu {
 
   margin-bottom: 50px;
 }
-
 .projects .inner ul li {
   display: flex;
   justify-content: space-between;

@@ -10,7 +10,7 @@
         <div
           id="myChartDiv1"
           slot="chartCanvas"
-          style="width: 600px; height: 300px"
+          style="width: 700px; height: 300px"
           @mousewheel="mouseWheel($event, 'myChartDiv1')"
         >
           <canvas
@@ -34,7 +34,7 @@
         <div
           id="myChartDiv2"
           slot="chartCanvas"
-          style="width: 600px; height: 300px"
+          style="width: 700px; height: 300px"
           @mousewheel="mouseWheel($event, 'myChartDiv2')"
         >
           <canvas
@@ -57,7 +57,7 @@
         <div
           id="myChartDiv3"
           slot="chartCanvas"
-          style="width: 600px; height: 300px"
+          style="width: 700px; height: 300px"
           @mousewheel="mouseWheel($event, 'myChartDiv3')"
         >
           <canvas
@@ -80,7 +80,7 @@
         <div
           id="myChartDiv4"
           slot="chartCanvas"
-          style="width: 600px; height: 300px"
+          style="width: 700px; height: 300px"
           @mousewheel="mouseWheel($event, 'myChartDiv4')"
         >
           <canvas
@@ -732,7 +732,7 @@ export default {
 
         element.item(num).scrollBy({
           // left: e.deltaY < 0 ? -30 : 30,
-          left: e.x > this.x[num] ? -30 : 30,
+          left: e.x > this.x[num] ? -15 : 15,
         });
       }
     },
