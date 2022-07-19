@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DLP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,1,0"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./scss/main.scss" />
+
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"
+      integrity="sha512-lZACdYsy0W98dOcn+QRNHDxFuhm62lfs8qK5+wPp7X358CN3f+ml49HpnwzTiXFzETs4++fADePDI+L2zwlm7Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="inner">
+        <img src="./images/logo (1).png" class="logo" alt="" />
+        <a class="name" href="#">DeMix Finance</a>
+        <div class="menus">
+          <a class="menu" href="#" id="menu-strategy">투자전략</a>
+          <a class="menu" href="#" id="menu-projects">대표 프로젝트</a>
+          <a class="menu" href="mailto:contact@deliquidity.com">문의하기</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- visual -->
+    <section class="visual">
+      <div class="inner">
+        <div class="text fade-in">
+          <div class="title">DEMIX FINANCE</div>
+          <div class="description">FUND MANAGEMENT</div>
+        </div>
+        <img
+          src="./images/메인-디믹스 펀드.svg"
+          alt=""
+          class="visualImg fade-in"
+        />
+      </div>
+    </section>
+
+    <!-- 디지털 자산 운용 -->
+    <section class="strategy">
+      <div class="inner">
+        <div class="title">디지털 자산 운용</div>
+        <div class="description">
+          DeMix 마이닝 알고리즘을 통해 디지털 자산 투자의 손실을 최소화하고
+          수익을 극대화합니다.
+        </div>
+        <div class="strategyList">
+          <div class="strategyItem">
+            <div class="icon material-symbols-outlined">monitoring</div>
+            <div class="text">
+              <div class="strategyTitle">투자전략1 (Spot, LEVERAGE: ⅹ1)</div>
+              <div class="strategydescription">
+                특징: 안정적인 투자, 낮은 리스크 <br />목표: 시장 평균 수익 +
+                디믹스 마이닝 수익
+              </div>
+            </div>
+          </div>
+          <div class="strategyItem">
+            <div class="icon material-symbols-outlined">monitoring</div>
+            <div class="text">
+              <div class="strategyTitle">투자전략2 (Spot, LEVERAGE: ⅹ3)</div>
+              <div class="strategydescription">
+                특징: 변동성이 큰 시장 환경 최적화<br />목표: 디믹스 마이닝 수익
+                극대화 (x3)
+              </div>
+            </div>
+          </div>
+          <div class="strategyItem">
+            <div class="icon material-symbols-outlined">currency_bitcoin</div>
+            <div class="text">
+              <div class="strategyTitle">
+                투자전략3 (Future, LEVERAGE: ⅹ5 이상)
+              </div>
+              <div class="strategydescription">
+                특징: 장기 우하향에서 수익 극대화, 높은 리스크의 거래이지만
+                디믹스 마이닝을 통해 리스크 헷징<br />목표: 디믹스 마이닝
+                알고리즘을 이용한 안정적인 선물 거래 및 USDT 수량 증대, 최종
+                수익 극대화
+              </div>
+            </div>
+          </div>
+          <div class="strategyItem">
+            <div class="icon material-symbols-outlined">account_tree</div>
+            <div class="text">
+              <div class="strategyTitle">
+                투자전략4 (Delivery, LEVERAGE: ⅹ5 이상)
+              </div>
+              <div class="strategydescription">
+                특징: 장기 우상향에서 수익 극대화, 높은 리스크의 거래이지만
+                디믹스 마이닝을 통해 리스크 헷징<br />목표: 디믹스 마이닝
+                알고리즘을 이용한 안정적인 선물 거래 및 코인 개수 증대, 최종
+                수익 극대화
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 대표 프로젝트 -->
+    <section class="projects scroll-spy">
+      <div class="inner">
+        <div class="title">대표 프로젝트 (차트)</div>
+        <ul>
+          <li class="project project1">
+            <div class="text">
+              <span class="badge stable">Stable</span>
+              <div class="strategyTitle">투자전략1 (Spot, LEVERAGE: ⅹ1)</div>
+              <div class="projectName">AUTO/USDT (ⅹ1)</div>
+              <div class="projectInfo">
+                대상: 상대적으로 낮은 유동성을 가진 마켓에 적합<br />
+                규모: $100,000 이하 소규모 자산<br />
+                특징: 낮은 리스크, 안정적인수익<br />
+                목표: 코인 가격 10배 이상 도달 시 수익 실현 예정
+              </div>
+            </div>
+            <div class="chart"></div>
+          </li>
+          <li class="project project2">
+            <div class="text">
+              <span class="badge highVolatility">High Volatility</span>
+              <div class="strategyTitle">투자 전략 2 (Spot, x3)</div>
+              <div class="projectName">LUNC/USDT (x3)</div>
+              <div class="projectInfo">
+                대상: 높은 변동성을 가진 마켓에 적합
+                <br />
+                규모: $200,000 내외 중소규모 자산<br />특징: 높은 변동성을
+                활용한 디믹스 마이닝 알고리즘을 최대한 활용하여 수익 극대화
+                <br />
+                목표: 초기 코인 가격 2~3배 도달 시 수익 실현
+              </div>
+            </div>
+            <div class="chart"></div>
+          </li>
+          <li class="project project3">
+            <div class="text">
+              <span class="badge veryHighVolatility"
+                >Very High Volatility
+              </span>
+              <div class="strategyTitle">투자 전략 3 (Future, x5~x10)</div>
+              <div class="projectName">LUNA2/BUSD (x10)</div>
+              <div class="projectInfo">
+                대상: 매우 높은 변동성을 가진 마켓에 적합 하락장(장기 우하향),
+                다양한 전략 구사 가능
+                <br />
+                규모: $100,000 이하 소규모 자산<br />특징: 매우 높은 변동성에서
+                극한의 수익 창출<br />
+                목표: 가격 2배 이상 도달 시 수익 실현하거나 투자전략 2로 전환,
+                USDT/BUSD 수량 증대
+              </div>
+            </div>
+            <div class="chart"></div>
+          </li>
+          <li class="project project4">
+            <div class="text">
+              <span class="badge highLiquidity">High Liquidity </span>
+              <div class="strategyTitle">투자 전략 4 (Delivery, x5~x10)</div>
+              <div class="projectName">BTC/USD (x10)</div>
+              <div class="projectInfo">
+                대상: 풍부한 유동성을 가지고 장기 우상향 마켓에 적합<br />
+                규모: $200,000 이상의 대규모 자산<br />특징: 회복 및 상승장에서
+                코인 수량을 점진적으로 증가 높은 리스크의 선물 시장에서 디믹스
+                알고리즘을 통해 리스크 최소화
+                <br />
+                목표: 초기 코인 가격 2~3배 도달 시 수식 실현하거나 투자 전략 1로
+                전환
+              </div>
+            </div>
+            <div class="chart"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 차트 소개 -->
+    <section class="chartIntro scroll-spy">
+      <div class="inner">
+        <div class="title">다양한 데이터 기반의 차트 제공</div>
+        <ul class="back-to-position to-top">
+          <li class="chartDetail">
+            <img src="./images/chart-sample.png" alt="" />
+            <div class="type">디폴트</div>
+            <div class="description">
+              홀드: 단순 홀드 시 자산 변동 율 <br />
+              실 수익: 초기 예치 금액 대비 현재 수익 율 <br />
+              디믹스 마이닝 온리: 프로그램을 통한 수익 율
+            </div>
+          </li>
+          <li class="chartDetail">
+            <img src="./images/chart-sample.png" alt="" />
+            <div class="type">옵션</div>
+            <div class="description">
+              홀드: 단순 홀드 시 자산 변동 율 <br />
+              실 수익: 초기 예치 금액 대비 현재 수익 율 <br />
+              디믹스 마이닝 온리: 프로그램을 통한 수익 율
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- start -->
+    <section class="start scroll-spy">
+      <div class="inner">
+        <div class="title">Start earning today</div>
+        <a class="btn" href="mailto:contact@deliquidity.com">문의하기</a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="inner">
+        <div class="copyright">
+          Copyright &copy; <span class="this-year"></span> Demix Finance. All
+          rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <div id="to-top">
+      <div class="material-symbols-outlined">arrow_upward</div>
+    </div>
+  </body>
+</html>

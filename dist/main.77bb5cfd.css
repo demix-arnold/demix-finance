@@ -1,0 +1,345 @@
+img {
+  display: block;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner {
+  width: 1240px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn {
+  width: 180px;
+  padding: 10px;
+  border: 2px solid #0d2c4d;
+  border-radius: 6px;
+  background-color: #0d2c4d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  box-sizing: border-box;
+  display: block;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #0d2c4d;
+}
+
+.badge {
+  padding: 6px 10px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.badge.stable {
+  background-color: #deebf7;
+  color: #0070c0;
+}
+.badge.highVolatility {
+  background-color: #e2f0d9;
+  color: #548235;
+}
+.badge.veryHighVolatility {
+  background-color: #fff2cc;
+  color: #bf9000;
+}
+.badge.highLiquidity {
+  background-color: #ffe5e5;
+  color: #c00000;
+}
+
+.back-to-position {
+  opacity: 0;
+  transition: 1s;
+}
+.back-to-position.to-top {
+  transform: translateY(150px);
+}
+
+.show .back-to-position {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+header .inner {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+}
+header .inner .logo {
+  height: 38px;
+  margin-right: 10px;
+}
+header .inner .name {
+  color: #0d2c4d;
+  font-size: 22px;
+  font-weight: 900;
+}
+header .inner .menus {
+  position: absolute;
+  right: 0px;
+}
+header .inner .menus .menu {
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #242424;
+}
+
+.visual .inner {
+  height: 650px;
+  display: flex;
+  align-items: center;
+}
+.visual .inner .fade-in {
+  opacity: 0;
+}
+.visual .inner .text {
+  margin-left: 50px;
+}
+.visual .inner .text .title {
+  color: #0d2c4d;
+  font-size: 58px;
+  font-weight: 700;
+}
+.visual .inner .text .description {
+  padding-left: 5px;
+  margin-top: 22px;
+  color: #ffc000;
+  font-size: 23px;
+  font-weight: 700;
+}
+.visual .inner .visualImg {
+  position: absolute;
+  right: 10px;
+}
+
+.strategy {
+  background-color: #f9f9f9;
+}
+.strategy .inner {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+.strategy .inner .title {
+  color: #242424;
+  font-size: 36px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.strategy .inner .description {
+  line-height: 1.625;
+  font-size: 18px;
+  color: #585858;
+  margin: 20px 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.strategy .inner .strategyList {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.strategy .inner .strategyList .strategyItem {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+}
+.strategy .inner .strategyList .strategyItem .icon {
+  margin-right: 15px;
+  font-size: 25px;
+  color: #0d2c4d;
+  border: 3px solid #0d2c4d;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-sizing: content-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.strategy .inner .strategyList .strategyItem .text {
+  width: 360px;
+  line-height: 1.625;
+}
+.strategy .inner .strategyList .strategyItem .text .strategyTitle {
+  font-size: 18px;
+  color: #242424;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.strategy .inner .strategyList .strategyItem .text .strategydescription {
+  width: 320px;
+  font-size: 16px;
+  color: #585858;
+}
+
+.projects .inner {
+  padding: 100px 0;
+}
+.projects .inner .title {
+  color: #242424;
+  font-size: 36px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.projects .inner ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .inner ul li .badge {
+  margin-bottom: 15px;
+}
+.projects .inner ul li .strategyTitle {
+  font-size: 18px;
+  color: #242424;
+  font-weight: 700;
+  line-height: 1.625;
+}
+.projects .inner ul li .projectName {
+  color: #585858;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.625;
+}
+.projects .inner ul li .projectInfo {
+  font-size: 16px;
+  color: #585858;
+  line-height: 1.625;
+  width: 321px;
+}
+.projects .inner ul li .chart {
+  margin: 50px 0;
+  width: 60%;
+  height: 40vh;
+  background-image: url("/chart-sample.3678328e.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.chartIntro {
+  background-color: #f9f9f9;
+}
+.chartIntro .inner {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+.chartIntro .inner .title {
+  color: #242424;
+  font-size: 36px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.chartIntro .inner ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.chartIntro .inner ul li {
+  margin: 30px 0;
+}
+.chartIntro .inner ul li img {
+  width: 500px;
+  margin-bottom: 30px;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px #eaecef;
+}
+.chartIntro .inner ul li .type {
+  font-size: 18px;
+  color: #242424;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.625;
+}
+.chartIntro .inner ul li .description {
+  font-size: 16px;
+  color: #585858;
+  line-height: 1.625;
+  width: 321px;
+}
+
+.start .inner {
+  padding: 100px 0;
+}
+.start .inner .title {
+  color: #242424;
+  font-size: 36px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.start .inner .btn {
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+footer {
+  border-top: 2px solid #eaecef;
+}
+footer .inner {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+footer .inner .copyright {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6c757d;
+}
+
+#to-top {
+  width: 42px;
+  height: 42px;
+  background-color: rgba(13, 44, 77, 0.5);
+  color: #fff;
+  border-radius: 21px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9;
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */
