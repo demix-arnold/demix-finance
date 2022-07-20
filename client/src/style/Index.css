@@ -266,10 +266,10 @@ a {
   color: #c00000;
 }
 
-/* .back-to-position {
+.back-to-position {
   opacity: 0;
   transition: 1s;
-} */
+}
 
 .back-to-position.to-top {
   transform: translateY(150px);

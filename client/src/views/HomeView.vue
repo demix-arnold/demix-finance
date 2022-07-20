@@ -100,7 +100,7 @@
         width="0"
       ></canvas>
     </Project>
-    <ChartEx />
+    <ChartEx :aniShow="aniShow" />
     <Start />
     <Footer />
 
@@ -301,6 +301,9 @@ export default {
       );
     });
 
+    // offsetTop
+  },
+  mounted() {
     const throttle = (callback, delay) => {
       let timer;
       return (event) => {
@@ -312,22 +315,32 @@ export default {
         }, delay);
       };
     };
+    const upup = document.getElementsByClassName("chartIntro");
 
     window.addEventListener(
       "scroll",
       throttle(() => {
-        if (window.scrollY > 500) {
+        // 화살표
+        if (window.pageYOffset > 450) {
           this.toTop = "top-in";
           // console.log("hi");
           this.timeOnce = true;
+        } else if (this.timeOnce) {
+          this.toTop = "top-out";
+          this.timeOnce = false;
+          setTimeout(() => {
+            this.toTop = "top-right";
+          }, 200);
+        }
+
+        // 이미지 예시
+        const a = upup[0].offsetTop - upup[0].offsetHeight;
+        if (window.pageYOffset > a) {
+          console.log("11");
+          this.aniShow = "show";
         } else {
-          if (this.timeOnce) {
-            this.toTop = "top-out";
-            this.timeOnce = false;
-            setTimeout(() => {
-              this.toTop = "top-right";
-            }, 200);
-          }
+          console.log("22");
+          this.aniShow = null;
         }
       }, 300)
     );
@@ -378,6 +391,7 @@ export default {
       // myChart05: null,
       toTop: "top-right",
       timeOnce: true,
+      aniShow: null,
     };
   },
   methods: {

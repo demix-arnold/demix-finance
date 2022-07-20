@@ -1,6 +1,7 @@
 <template>
-  <section class="chartIntro scroll-spy">
-    <div class="inner show">
+  <!-- <section class="chartIntro scroll-spy"> -->
+  <section :class="`chartIntro scroll-spy ${aniShow}`">
+    <div class="inner">
       <!-- show 붙여둠 -->
       <div class="title center">다양한 데이터 기반의 차트 제공</div>
       <ul class="back-to-position to-top">
@@ -26,3 +27,11 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  props: {
+    aniShow: String,
+  },
+};
+</script>
