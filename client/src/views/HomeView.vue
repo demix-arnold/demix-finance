@@ -633,7 +633,7 @@ export default {
               display: true,
               title: {
                 display: true,
-                text: "Operating Time (H)",
+                // text: "Operating Time (H)",
                 // color: "#911",
                 // font: {
                 //   family: "Comic Sans MS",

@@ -20,6 +20,7 @@
           <div class="rela">
             <slot name="chart1"></slot>
             <slot name="chart11"></slot>
+            <div class="p-ab1">Operating Time (H)</div>
           </div>
         </li>
         <li class="project project2">
@@ -39,6 +40,7 @@
           <div class="rela">
             <slot name="chart2"></slot>
             <slot name="chart22"></slot>
+            <div class="p-ab1">Operating Time (H)</div>
           </div>
         </li>
         <li class="project project3">
@@ -61,6 +63,7 @@
           <div class="rela">
             <slot name="chart3"></slot>
             <slot name="chart33"></slot>
+            <div class="p-ab1">Operating Time (H)</div>
           </div>
         </li>
         <li class="project project4">
@@ -83,6 +86,7 @@
           <div class="rela">
             <slot name="chart4"></slot>
             <slot name="chart44"></slot>
+            <div class="p-ab1">Operating Time (H)</div>
           </div>
         </li>
         <!-- <li class="project project5">

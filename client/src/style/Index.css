@@ -671,6 +671,17 @@ html {
   pointer-events: none;
 }
 
+.p-ab1 {
+  position: absolute;
+  left: 330px;
+  bottom: 50px;
+  width: 150px; /* Need a specific value to work */
+  color: rgb(102, 95, 95);
+  font-family: "Comic Sans MS";
+  font-size: 12px;
+  font-weight: "bold";
+}
+
 .rela {
   position: relative;
 }
