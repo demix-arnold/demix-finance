@@ -519,19 +519,19 @@ footer .inner .copyright {
 .top-in {
   right: 30px;
 
-  animation: arrow-in 0.2s;
-  -moz-animation: arrow-in 0.2s; /* Firefox */
-  -webkit-animation: arrow-in 0.2s; /* Safari and Chrome */
-  -o-animation: arrow-in 0.2s; /* Opera */
+  animation: arrow-in 0.3s;
+  -moz-animation: arrow-in 0.3s; /* Firefox */
+  -webkit-animation: arrow-in 0.3s; /* Safari and Chrome */
+  -o-animation: arrow-in 0.3s; /* Opera */
 }
 
 .top-out {
   right: 30px;
   /* right: -130px; */
-  animation: arrow-out 0.2s;
-  -moz-animation: arrow-out 0.2s; /* Firefox */
-  -webkit-animation: arrow-out 0.2s; /* Safari and Chrome */
-  -o-animation: arrow-out 0.2s; /* Opera */
+  animation: arrow-out 0.3s;
+  -moz-animation: arrow-out 0.3s; /* Firefox */
+  -webkit-animation: arrow-out 0.3s; /* Safari and Chrome */
+  -o-animation: arrow-out 0.3s; /* Opera */
 }
 
 .top-right {

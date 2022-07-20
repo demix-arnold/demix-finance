@@ -8,8 +8,8 @@ var { readFirstSheetRow, readFirstSheetRow1 } = require("./db/getDB");
 
 const corsOption = {
   // origin: "https://www.deliquidity.co.kr/",
-  // origin: "http://localhost:8080",
-  origin: "http://158.247.202.179:80/",
+  origin: "http://localhost:8080",
+  // origin: "http://158.247.202.179:80/",
   // origin: "*",
   credentials: true,
 };

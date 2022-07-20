@@ -252,17 +252,17 @@ export default {
     Start,
     Visual,
   },
-  watch: {
-    async checkedNames(val) {
-      if (!val) return;
-      for (var i = 0; i < val.length; i++) {
-        let f = this.table[val[i][0]].chart;
-        setTimeout(() => {
-          f();
-        }, 100);
-      }
-    },
-  },
+  // watch: {
+  //   async checkedNames(val) {
+  //     if (!val) return;
+  //     for (var i = 0; i < val.length; i++) {
+  //       let f = this.table[val[i][0]].chart;
+  //       setTimeout(() => {
+  //         f();
+  //       }, 100);
+  //     }
+  //   },
+  // },
   created() {
     this.chartDataCall(7).then((result) => {
       this.chartBasic1(
@@ -336,10 +336,10 @@ export default {
         // 이미지 예시
         const a = upup[0].offsetTop - upup[0].offsetHeight;
         if (window.pageYOffset > a) {
-          console.log("11");
+          // console.log("11");
           this.aniShow = "show";
         } else {
-          console.log("22");
+          // console.log("22");
           this.aniShow = null;
         }
       }, 300)
@@ -421,13 +421,13 @@ export default {
 
     chartBasic1(getData, num, source, target, saveChart) {
       const sourceCanvas = document.getElementById(source);
-      console.log(sourceCanvas);
+      // console.log(sourceCanvas);
       const sourceCtx = sourceCanvas.getContext("2d");
       // console.log(document);
       const targetCanvas = document.getElementById(target);
-      console.log(targetCanvas);
+      // console.log(targetCanvas);
       const targetCtx = targetCanvas.getContext("2d");
-      console.log(saveChart);
+      // console.log(saveChart);
 
       const data1 = getData;
       let hold = [];
@@ -516,7 +516,7 @@ export default {
       const htmlLegendPlugin = {
         id: "htmlLegend",
         afterUpdate(chart, args, options) {
-          console.log(options.containerID);
+          // console.log(options.containerID);
           const ul = getOrCreateLegendList(chart, options.containerID);
 
           // Remove old legend items
