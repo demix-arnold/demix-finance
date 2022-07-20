@@ -105,9 +105,8 @@
     <Footer />
 
     <a class="menu" href="#menu-strategy">
-      <div id="to-top">
-        <div class="material-symbols-outlined">arrow_upward</div>
-        <!-- <div class="material-symbols-outlined">arrow_upward</div> -->
+      <div id="to-top" :class="`material-symbols-outlined ${toTop}`">
+        arrow_upward
       </div>
     </a>
 
@@ -265,21 +264,73 @@ export default {
     },
   },
   created() {
-    // Chart.register();
-
     this.chartDataCall(7).then((result) => {
-      this.investmentStrategy1Chart(result, 1);
+      this.chartBasic1(
+        result,
+        1,
+        "GridChart01",
+        "GridChart01Y",
+        this.myChart01
+      );
     });
     this.chartDataCall1(3).then((result) => {
-      this.investmentStrategy2Chart(result, 2);
+      this.chartBasic1(
+        result,
+        2,
+        "GridChart02",
+        "GridChart02Y",
+        this.myChart02
+      );
     });
     this.chartDataCall1(4).then((result) => {
-      this.investmentStrategy3Chart(result, 3);
+      this.chartBasic1(
+        result,
+        3,
+        "GridChart03",
+        "GridChart03Y",
+        this.myChart03
+      );
     });
     this.chartDataCall(2).then((result) => {
-      this.investmentStrategy4Chart(result, 4);
-      // this.chartBasic1(result, 5);
+      this.chartBasic1(
+        result,
+        4,
+        "GridChart04",
+        "GridChart04Y",
+        this.myChart04
+      );
     });
+
+    const throttle = (callback, delay) => {
+      let timer;
+      return (event) => {
+        // 타이머가 호출되면, 함수를 실행하고 타이머 제거
+        if (timer) return;
+        timer = setTimeout(() => {
+          callback(event);
+          timer = null;
+        }, delay);
+      };
+    };
+
+    window.addEventListener(
+      "scroll",
+      throttle(() => {
+        if (window.scrollY > 500) {
+          this.toTop = "top-in";
+          // console.log("hi");
+          this.timeOnce = true;
+        } else {
+          if (this.timeOnce) {
+            this.toTop = "top-out";
+            this.timeOnce = false;
+            setTimeout(() => {
+              this.toTop = "top-right";
+            }, 200);
+          }
+        }
+      }, 300)
+    );
   },
   data() {
     return {
@@ -325,6 +376,8 @@ export default {
       myChart03: null,
       myChart04: null,
       // myChart05: null,
+      toTop: "top-right",
+      timeOnce: true,
     };
   },
   methods: {
@@ -350,46 +403,6 @@ export default {
         label.push(index);
       }
       return label;
-    },
-
-    investmentStrategy1Chart(data, num) {
-      this.chartBasic1(
-        data,
-        num,
-        "GridChart01",
-        "GridChart01Y",
-        this.myChart01
-      );
-    },
-
-    investmentStrategy2Chart(data, num) {
-      this.chartBasic1(
-        data,
-        num,
-        "GridChart02",
-        "GridChart02Y",
-        this.myChart02
-      );
-    },
-
-    investmentStrategy3Chart(data, num) {
-      this.chartBasic1(
-        data,
-        num,
-        "GridChart03",
-        "GridChart03Y",
-        this.myChart03
-      );
-    },
-
-    investmentStrategy4Chart(data, num) {
-      this.chartBasic1(
-        data,
-        num,
-        "GridChart04",
-        "GridChart04Y",
-        this.myChart04
-      );
     },
 
     chartBasic1(getData, num, source, target, saveChart) {
@@ -702,7 +715,7 @@ export default {
 
       if (e.deltaY < 0) {
         str1 = str1 + 15; // 작아짐
-      } else {
+      } else if (str1 > 700) {
         str1 = str1 - 15; // 커짐
       }
 

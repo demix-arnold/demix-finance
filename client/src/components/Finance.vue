@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="strategyItem">
-          <span class="icon material-symbols-outlined">currency_exchange</span>
+          <span class="icon material-symbols-outlined">trending_down</span>
           <div class="text">
             <div class="strategyTitle smallTitle">
               투자전략3 (Future, LEVERAGE: ⅹ5 이상)

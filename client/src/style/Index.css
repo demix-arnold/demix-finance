@@ -513,8 +513,29 @@ footer .inner .copyright {
   align-items: center;
   position: fixed;
   bottom: 30px;
-  right: 30px;
   z-index: 9;
+}
+
+.top-in {
+  right: 30px;
+
+  animation: arrow-in 0.2s;
+  -moz-animation: arrow-in 0.2s; /* Firefox */
+  -webkit-animation: arrow-in 0.2s; /* Safari and Chrome */
+  -o-animation: arrow-in 0.2s; /* Opera */
+}
+
+.top-out {
+  right: 30px;
+  /* right: -130px; */
+  animation: arrow-out 0.2s;
+  -moz-animation: arrow-out 0.2s; /* Firefox */
+  -webkit-animation: arrow-out 0.2s; /* Safari and Chrome */
+  -o-animation: arrow-out 0.2s; /* Opera */
+}
+
+.top-right {
+  right: -130px !important;
 }
 
 /* mixin */
@@ -663,4 +684,23 @@ html {
 
 .marginT {
   margin-top: 50px;
+}
+
+@keyframes arrow-out {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(100px, 0);
+  }
+}
+
+@keyframes arrow-in {
+  0% {
+    transform: translate(100px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
