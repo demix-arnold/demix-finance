@@ -296,6 +296,11 @@ export const chartBasic1 = (getData, num, source, target, saveChart, title) => {
         },
         legend: {
           display: true,
+          labels: {
+            font: {
+              size: 10,
+            },
+          },
         },
         tooltip: {
           callbacks: {
@@ -338,12 +343,13 @@ export const chartBasic1 = (getData, num, source, target, saveChart, title) => {
           // backgroundColor: "rgb(255, 99, 132)",
           // max: 10,
           ticks: {
+            align: "start",
             callback: function (val, index) {
               // console.log(date112233[val]);
               // console.log(date112233);
               // maxTicksLimit 이 충분히 커야 제대로 나옴
               //slice(2, -3)
-              return index % 150 === 0
+              return index % 200 === 0
                 ? this.getLabelForValue(date112233[val].slice(2))
                 : "";
             },
