@@ -173,13 +173,14 @@ h4 {
 
 .chart-detail-set {
   position: absolute;
-  top: 0px;
+  top: 40px;
   right: 0;
+  background-color: white;
 }
 
 .chart-detail-set-list {
   position: absolute;
-  top: -60px;
+  top: -40px;
   right: 0;
   background-color: rgba(228, 215, 215, 0.401);
 }
@@ -190,6 +191,9 @@ h4 {
 
 .mt5 {
   margin-top: 5px;
+}
+.mt10 {
+  margin-top: 2rem;
 }
 /* 
 .aaaa {
@@ -673,9 +677,9 @@ html {
 
 .p-ab1 {
   position: absolute;
-  left: 330px;
+  right: 0;
   bottom: 50px;
-  width: 150px; /* Need a specific value to work */
+  /* width: 80px; Need a specific value to work */
   color: rgb(102, 95, 95);
   font-family: "Comic Sans MS";
   font-size: 12px;
@@ -686,11 +690,22 @@ html {
   position: relative;
 }
 .bg-White {
-  background-color: white;
+  /* background-color: white; */
 }
 
 .pd-TB {
   padding: 50px 0;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  ) !important;
+}
+
+.pd-t {
+  padding-top: 50px;
 }
 
 .marginT {
