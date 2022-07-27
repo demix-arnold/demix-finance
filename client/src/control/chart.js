@@ -273,6 +273,8 @@ export const chartBasic1 = (getData, num, source, target, saveChart, title) => {
     });
     return "Date: " + date;
   };
+  apy = Number(apy);
+  const lastTitle = title + "    APY " + apy.toFixed(2) + "%";
 
   saveChart = new Chart(sourceCtx, {
     type: "line",
@@ -288,7 +290,7 @@ export const chartBasic1 = (getData, num, source, target, saveChart, title) => {
       plugins: {
         title: {
           display: true,
-          text: title,
+          text: lastTitle,
         },
         htmlLegend: {
           // ID of the container to put the legend in
@@ -300,6 +302,10 @@ export const chartBasic1 = (getData, num, source, target, saveChart, title) => {
             font: {
               size: 10,
             },
+            //라벨 스타일
+            // pointStyle: "line",
+            // // 라벨 사용할지
+            // usePointStyle: true,
           },
         },
         tooltip: {
@@ -345,10 +351,11 @@ export const chartBasic1 = (getData, num, source, target, saveChart, title) => {
           ticks: {
             align: "start",
             callback: function (val, index) {
-              // console.log(date112233[val]);
+              //   console.log(date112233[val]);
               // console.log(date112233);
               // maxTicksLimit 이 충분히 커야 제대로 나옴
               //slice(2, -3)
+              // 200
               return index % 200 === 0
                 ? this.getLabelForValue(date112233[val].slice(2))
                 : "";

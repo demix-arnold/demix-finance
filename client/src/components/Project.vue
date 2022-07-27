@@ -20,7 +20,7 @@
           <div class="rela">
             <slot name="chart1"></slot>
             <slot name="chart11"></slot>
-            <div class="p-ab1">APY: {{ apyList[1] }}%</div>
+            <!-- <div class="p-ab1">APY: {{ apyList[1] }}%</div> -->
           </div>
         </li>
         <li class="project project2">
@@ -40,7 +40,7 @@
           <div class="rela">
             <slot name="chart2"></slot>
             <slot name="chart22"></slot>
-            <div class="p-ab1">APY: {{ apyList[2] }}%</div>
+            <!-- <div class="p-ab1">APY: {{ apyList[2] }}%</div> -->
           </div>
         </li>
         <li class="project project3">
@@ -63,7 +63,7 @@
           <div class="rela">
             <slot name="chart3"></slot>
             <slot name="chart33"></slot>
-            <div class="p-ab1">APY: {{ apyList[3] }}%</div>
+            <!-- <div class="p-ab1">APY: {{ apyList[3] }}%</div> -->
           </div>
         </li>
         <li class="project project4">
@@ -86,7 +86,7 @@
           <div class="rela">
             <slot name="chart4"></slot>
             <slot name="chart44"></slot>
-            <div class="p-ab1">APY: {{ apyList[4] }}%</div>
+            <!-- <div class="p-ab1">APY: {{ apyList[4] }}%</div> -->
           </div>
         </li>
         <!-- <li class="project project5">
@@ -118,9 +118,9 @@
 
 <script>
 export default {
-  props: {
-    apyList: Array,
-  },
+  // props: {
+  //   apyList: Array,
+  // },
   // created() {},
   // mounted() {
   //   this.list = this.apyList;

@@ -5,7 +5,8 @@
     <Visual />
     <Finance />
     <!-- <button @click="aaa()">aa</button> -->
-    <Project :apyList="apyList">
+    <!-- <Project :apyList="apyList"> -->
+    <Project>
       <Setting msg="myChart1Con" slot="chart1" class="marginTB">
         <div
           id="myChartDiv1"
@@ -222,36 +223,36 @@ export default {
         "AUTO/USDT (x1)"
       );
     });
-    // this.chartDataCall1(3).then((result) => {
-    //   this.chartBasic1(
-    //     result,
-    //     2,
-    //     "GridChart02",
-    //     "GridChart02Y",
-    //     this.myChart02,
-    //     "LUNC/USDT (x3)"
-    //   );
-    // });
-    // this.chartDataCall1(4).then((result) => {
-    //   this.chartBasic1(
-    //     result,
-    //     3,
-    //     "GridChart03",
-    //     "GridChart03Y",
-    //     this.myChart03,
-    //     "LUNA2/BUSD (x10)"
-    //   );
-    // });
-    // this.chartDataCall(2).then((result) => {
-    //   this.chartBasic1(
-    //     result,
-    //     4,
-    //     "GridChart04",
-    //     "GridChart04Y",
-    //     this.myChart04,
-    //     "BTC/USD (x10)"
-    //   );
-    // });
+    this.chartDataCall1(3).then((result) => {
+      this.chartBasic1(
+        result,
+        2,
+        "GridChart02",
+        "GridChart02Y",
+        this.myChart02,
+        "LUNC/USDT (x3)"
+      );
+    });
+    this.chartDataCall1(4).then((result) => {
+      this.chartBasic1(
+        result,
+        3,
+        "GridChart03",
+        "GridChart03Y",
+        this.myChart03,
+        "LUNA2/BUSD (x10)"
+      );
+    });
+    this.chartDataCall(2).then((result) => {
+      this.chartBasic1(
+        result,
+        4,
+        "GridChart04",
+        "GridChart04Y",
+        this.myChart04,
+        "BTC/USD (x10)"
+      );
+    });
 
     // offsetTop
   },
