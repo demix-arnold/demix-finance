@@ -63,15 +63,11 @@ const makeLabel1 = (data) => {
   return label;
 };
 
-export const chartBasic1 = (getData, num, source, target, saveChart, title) => {
+export const chartBasic1 = (getData, num, source, saveChart, title) => {
   const sourceCanvas = document.getElementById(source);
   // console.log(sourceCanvas);
   const sourceCtx = sourceCanvas.getContext("2d");
   // console.log(document);
-  const targetCanvas = document.getElementById(target);
-  // console.log(targetCanvas);
-  const targetCtx = targetCanvas.getContext("2d");
-  // console.log(saveChart);
 
   const data1 = getData;
   let hold = [];
@@ -382,38 +378,6 @@ export const chartBasic1 = (getData, num, source, target, saveChart, title) => {
             // },
             padding: { top: 30, left: 0, right: 0, bottom: 0 },
           },
-        },
-      },
-
-      animation: {
-        onComplete: function () {
-          if (!this.rectangleSet) {
-            // console.log(saveChart);
-            const scale = window.devicePixelRatio;
-
-            const copyWidth = saveChart.scales.yAxis.width - 10;
-            const copyHeight =
-              saveChart.scales.yAxis.height + saveChart.scales.yAxis.top + 10;
-
-            targetCtx.scale(scale, scale);
-            targetCtx.canvas.width = copyWidth * scale;
-            targetCtx.canvas.height = copyHeight * scale;
-            targetCtx.canvas.style.width = copyWidth + "px";
-            targetCtx.canvas.style.height = copyHeight + "px";
-            targetCtx.drawImage(
-              sourceCanvas,
-              0,
-              0,
-              copyWidth * scale,
-              copyHeight * scale,
-              0,
-              0,
-              copyWidth * scale,
-              copyHeight * scale
-            );
-            sourceCtx.clearRect(0, 0, copyWidth, copyHeight);
-            this.rectangleSet = true;
-          }
         },
       },
     },

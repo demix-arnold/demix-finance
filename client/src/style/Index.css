@@ -668,46 +668,6 @@ html {
   }
 }
 
-.p-ab {
-  position: absolute;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-}
-
-.p-ab1 {
-  position: absolute;
-  right: 0;
-  bottom: 50px;
-  /* width: 80px; Need a specific value to work */
-  color: rgb(102, 95, 95);
-  /* font-family: "Comic Sans MS"; */
-  font-size: 12px;
-  /* font-weight: "bold"; */
-}
-
-.rela {
-  position: relative;
-}
-.bg-White {
-  background-color: white;
-}
-
-.pd-TB {
-  padding: 50px 0;
-  /* background-image: linear-gradient(
-    to right,
-    rgb(255, 255, 255),
-    rgb(255, 255, 255),
-    rgb(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0)
-  ) !important; */
-}
-
-.pd-t {
-  padding-top: 50px;
-}
-
 .marginT {
   margin-top: 50px;
 }

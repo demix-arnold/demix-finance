@@ -8,98 +8,40 @@
     <!-- <Project :apyList="apyList"> -->
     <Project>
       <Setting msg="myChart1Con" slot="chart1" class="marginTB">
-        <div
-          id="myChartDiv1"
+        <canvas
           slot="chartCanvas"
-          style="width: 700px; height: 300px"
-          @mousewheel="mouseWheel($event, 'myChartDiv1')"
-        >
-          <canvas
-            id="GridChart01"
-            @mousedown="startDrag($event, 0)"
-            @mousemove="doDrag($event, 0)"
-            @mouseup="stopDrag(0)"
-            @mouseout="stopDrag(0)"
-            ref="myCanvas"
-          ></canvas>
-        </div>
+          width="700"
+          height="300"
+          id="GridChart01"
+        ></canvas>
       </Setting>
-      <canvas
-        id="GridChart01Y"
-        class="pd-TB bg-White p-ab"
-        slot="chart11"
-        height="300"
-        width="0"
-      ></canvas>
+
       <Setting msg="myChart2Con" slot="chart2" class="marginTB">
-        <div
-          id="myChartDiv2"
+        <canvas
           slot="chartCanvas"
-          style="width: 700px; height: 300px"
-          @mousewheel="mouseWheel($event, 'myChartDiv2')"
-        >
-          <canvas
-            id="GridChart02"
-            @mousedown="startDrag($event, 1)"
-            @mousemove="doDrag($event, 1)"
-            @mouseup="stopDrag(1)"
-            @mouseout="stopDrag(1)"
-          ></canvas>
-        </div>
+          width="700"
+          height="300"
+          id="GridChart02"
+        ></canvas>
       </Setting>
-      <canvas
-        id="GridChart02Y"
-        class="pd-TB bg-White p-ab"
-        slot="chart22"
-        height="300"
-        width="0"
-      ></canvas>
+
       <Setting msg="myChart3Con" slot="chart3" class="marginTB">
-        <div
-          id="myChartDiv3"
+        <canvas
           slot="chartCanvas"
-          style="width: 700px; height: 300px"
-          @mousewheel="mouseWheel($event, 'myChartDiv3')"
-        >
-          <canvas
-            id="GridChart03"
-            @mousedown="startDrag($event, 2)"
-            @mousemove="doDrag($event, 2)"
-            @mouseup="stopDrag(2)"
-            @mouseout="stopDrag(2)"
-          ></canvas>
-        </div>
+          width="700"
+          height="300"
+          id="GridChart03"
+        ></canvas>
       </Setting>
-      <canvas
-        id="GridChart03Y"
-        class="pd-TB bg-White p-ab"
-        slot="chart33"
-        height="300"
-        width="0"
-      ></canvas>
+
       <Setting msg="myChart4Con" slot="chart4" class="marginTB">
-        <div
-          id="myChartDiv4"
+        <canvas
           slot="chartCanvas"
-          style="width: 700px; height: 300px"
-          @mousewheel="mouseWheel($event, 'myChartDiv4')"
-        >
-          <canvas
-            id="GridChart04"
-            @mousedown="startDrag($event, 3)"
-            @mousemove="doDrag($event, 3)"
-            @mouseup="stopDrag(3)"
-            @mouseout="stopDrag(3)"
-          ></canvas>
-        </div>
+          width="700"
+          height="300"
+          id="GridChart04"
+        ></canvas>
       </Setting>
-      <canvas
-        id="GridChart04Y"
-        class="pd-TB bg-White p-ab"
-        slot="chart44"
-        height="300"
-        width="0"
-      ></canvas>
     </Project>
     <ChartEx :aniShow="aniShow" />
     <Start />
@@ -218,7 +160,7 @@ export default {
         result,
         1,
         "GridChart01",
-        "GridChart01Y",
+
         this.myChart01,
         "AUTO/USDT (x1)"
       );
@@ -228,7 +170,7 @@ export default {
         result,
         2,
         "GridChart02",
-        "GridChart02Y",
+
         this.myChart02,
         "LUNC/USDT (x3)"
       );
@@ -238,7 +180,7 @@ export default {
         result,
         3,
         "GridChart03",
-        "GridChart03Y",
+
         this.myChart03,
         "LUNA2/BUSD (x10)"
       );
@@ -248,7 +190,7 @@ export default {
         result,
         4,
         "GridChart04",
-        "GridChart04Y",
+
         this.myChart04,
         "BTC/USD (x10)"
       );
@@ -325,48 +267,6 @@ export default {
       aniShow: null,
       apyList: [],
     };
-  },
-  methods: {
-    // 마우스 휠로 스크린 바 좌우로 움직임
-    mouseWheel(e, id) {
-      e.preventDefault();
-      const element = document.getElementById(id);
-
-      let str = element.style.width;
-      let str1 = Number(str.slice(0, -2));
-
-      if (e.deltaY < 0) {
-        str1 = str1 + 15; // 작아짐
-      } else if (str1 > 700) {
-        str1 = str1 - 15; // 커짐
-      }
-
-      // console.log(str1);
-      element.style.width = str1 + "px";
-    },
-
-    startDrag(e, num) {
-      this.dragging = true;
-      this.x[num] = e.x;
-    },
-    stopDrag(num) {
-      if (this.dragging) {
-        this.dragging = false;
-        this.x[num] = null;
-      }
-    },
-    doDrag(e, num) {
-      if (this.dragging) {
-        e.preventDefault();
-        const element = document.getElementsByClassName("chart-detail");
-        //다른곳 델타값 알아보기
-
-        element.item(num).scrollBy({
-          // left: e.deltaY < 0 ? -30 : 30,
-          left: e.x > this.x[num] ? -15 : 15,
-        });
-      }
-    },
   },
 };
 </script>

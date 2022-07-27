@@ -1,7 +1,7 @@
 const axios = require("axios");
 
-// axios.defaults.baseURL = "https://finance.demix.co.kr/";
-axios.defaults.baseURL = "http://localhost:3000"; //서버 ip 주소
+axios.defaults.baseURL = "https://finance.demix.co.kr/";
+// axios.defaults.baseURL = "http://localhost:3000"; //서버 ip 주소
 // axios.defaults.baseURL = "http://158.247.202.179"; //서버 ip 주소
 
 axios.defaults.headers.post["Content-Type"] = "application/json;charset=utf-8;";
